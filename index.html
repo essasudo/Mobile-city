@@ -7,37 +7,6 @@
 
 <style>
 
-</style>
-
-</head>
-
-<body>
-
-<div id="loader">
-    <div class="ring">
-        <div class="logo">Mobile City</div>
-    </div>
-</div>
-
-<div id="content">
-    <h1>السلام علیکم</h1>
-    <p>یہ میری پہلی ویب سائٹ ہے۔</p>
-</div>
-
-<script>
-setTimeout(function(){
-
-    document.getElementById("loader").style.display="none";
-
-    document.getElementById("content").style.display="block";
-
-    document.body.style.overflow="auto";
-
-},10000);
-</script>
-
-</body>
-</html>
 body{
     margin:0;
     background:#000;
@@ -64,10 +33,7 @@ body{
     border-radius:50%;
     border:8px solid #00e5ff;
     border-top:8px solid #00ff88;
-    box-shadow:
-    0 0 20px #00e5ff,
-    0 0 40px #00ff88,
-    0 0 60px #00e5ff;
+    box-shadow:0 0 20px #00e5ff,0 0 40px #00ff88,0 0 60px #00e5ff;
     animation:spin 2s linear infinite;
     display:flex;
     justify-content:center;
@@ -78,9 +44,7 @@ body{
     color:white;
     font-size:24px;
     font-weight:bold;
-    text-shadow:
-    0 0 10px #00e5ff,
-    0 0 20px #00ff88;
+    text-shadow:0 0 10px #00e5ff,0 0 20px #00ff88;
 }
 
 #content{
@@ -88,10 +52,7 @@ body{
 }
 
 @keyframes spin{
-    from{
-        transform:rotate(0deg);
-    }
-    to{
-        transform:rotate(360deg);
-    }
+    from{transform:rotate(0deg);}
+    to{transform:rotate(360deg);}
 }
+</style>
