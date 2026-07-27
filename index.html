@@ -81,3 +81,47 @@ text-shadow:
 0%{transform:rotate(0deg);}
 100%{transform:rotate(360deg);}
 }
+.flash{
+position:absolute;
+width:250px;
+height:250px;
+border-radius:50%;
+border:3px solid rgba(0,229,255,.4);
+box-shadow:
+0 0 20px #00e5ff,
+0 0 50px #00ff88,
+0 0 100px #00e5ff;
+animation:pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse{
+0%{
+transform:scale(1);
+opacity:1;
+}
+50%{
+transform:scale(1.08);
+opacity:.5;
+}
+100%{
+transform:scale(1);
+opacity:1;
+}
+}
+
+#content{
+display:none;
+padding:30px;
+color:#ffffff;
+text-align:center;
+}
+
+h1{
+font-size:36px;
+margin-bottom:15px;
+}
+
+p{
+font-size:20px;
+line-height:1.6;
+}
