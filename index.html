@@ -94,11 +94,30 @@ font-weight:bold;
 letter-spacing:2px;
 z-index:5;
 
+animation:glow 1.5s ease-in-out infinite alternate;
+
 text-shadow:
 0 0 10px #00ffff,
 0 0 20px #00e5ff,
 0 0 40px #00ff88,
 0 0 80px #00ffff;
+}
+
+@keyframes glow{
+
+from{
+text-shadow:
+0 0 10px #00e5ff,
+0 0 20px #00ffff;
+}
+
+to{
+text-shadow:
+0 0 20px #00ff88,
+0 0 40px #00ffff,
+0 0 80px #00e5ff;
+}
+
 }
 
 @keyframes spin{
