@@ -65,7 +65,16 @@ box-shadow:
 0 0 120px #00e5ff,
 0 0 180px #00ffff;
 }
-
+.ring::before{
+content:"";
+position:absolute;
+top:16px;
+left:16px;
+right:16px;
+bottom:16px;
+background:#000;
+border-radius:50%;
+}
 .ring::before{
 content:"";
 position:absolute;
