@@ -75,15 +75,21 @@ bottom:16px;
 background:#000;
 border-radius:50%;
 }
-.ring::before{
+.ring::after{
 content:"";
 position:absolute;
-top:16px;
-left:16px;
-right:16px;
-bottom:16px;
-background:#000;
+width:18px;
+height:18px;
 border-radius:50%;
+background:#ffffff;
+top:8px;
+left:50%;
+transform:translateX(-50%);
+box-shadow:
+0 0 15px #fff,
+0 0 30px #00ffff,
+0 0 50px #00e5ff,
+0 0 80px #00ff88;
 }
 
 .logo{
