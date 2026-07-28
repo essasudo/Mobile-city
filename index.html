@@ -47,16 +47,16 @@ width:240px;
 height:240px;
 border-radius:50%;
 background:conic-gradient(
-#00e5ff 0deg,
+#00e5ff 120deg,
 #00ffff 70deg,
-#00ff88 140deg,
-#00ffff 220deg,
+#00ff88 40deg,
+#00ffff 120deg,
 #00e5ff 360deg
 );
 
-animation:spin 1.5s linear infinite;
+animation:spin 1.2s linear infinite;
 
-filter:blur(1px);
+filter:blur(3px);
 
 box-shadow:
 0 0 20px #00e5ff,
@@ -75,22 +75,7 @@ bottom:16px;
 background:#000;
 border-radius:50%;
 }
-.ring::after{
-content:"";
-position:absolute;
-width:18px;
-height:18px;
-border-radius:50%;
-background:#ffffff;
-top:8px;
-left:50%;
-transform:translateX(-50%);
-box-shadow:
-0 0 15px #fff,
-0 0 30px #00ffff,
-0 0 50px #00e5ff,
-0 0 80px #00ff88;
-}
+
 
 .logo{
 position:absolute;
@@ -100,7 +85,7 @@ font-weight:bold;
 letter-spacing:2px;
 z-index:5;
 
-animation:glow 1.5s ease-in-out infinite alternate;
+animation:glow 1.2s ease-in-out infinite alternate;
 
 text-shadow:
 0 0 10px #00ffff,
