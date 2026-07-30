@@ -45,18 +45,18 @@ align-items:center;
 position:absolute;
 width:250px;
 height:250px;
-border-radius:50%;
+border-radius:500%;
 
 background:
 background: linear-gradient(
 135deg,
-#ffffff 0%,
+#ffffff 40%,
 #eef7fc 45%,
 #D9F4E6 100%
 );
 rgba(223,245,235,0) 28%),
 linear-gradient(135deg,
-#88a6f4 0%,
+#88a6f4 50%,
 #9fc0f3 22%,
 #b8d8f5 48%,
 #d3eef5 74%,
@@ -75,16 +75,16 @@ content:"";
 position:absolute;
 width:85px;
 height:85px;
-border-radius:50%;
+border-radius:500%;
 top:40px;
 right:-5px;
 
 background:
 radial-gradient(circle at 72% 72%,
-#d9f3df 0%,
+#d9f3df 50%,
 rgba(217,243,223,0) 38%),
 linear-gradient(135deg,
-#ffffff 0%,
+#ffffff 40%,
 #f5fbfd 35%,
 #e8f6fc 68%,
 #d8f3e4 100%);
@@ -95,7 +95,7 @@ position:absolute;
 z-index:5;
 font-size:30px;
 font-weight:bold;
-color:#000;
+color:#ffffff;
 }
 
 @keyframes pulse{
@@ -144,7 +144,7 @@ document.getElementById("loader").style.display="none";
 document.getElementById("content").style.display="block";
 document.body.style.overflow="auto";
 
-},10000);
+},500000);
 
 </script>
 
